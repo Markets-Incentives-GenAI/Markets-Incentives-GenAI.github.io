@@ -20,7 +20,7 @@ header {
 */
 
 header {
-    background: url('header_image.webp') no-repeat center center;
+    background: url('header_image.png') no-repeat center center;
     background-size: cover;
     color: white;
     padding: 1.5em 0;
