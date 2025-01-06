@@ -149,3 +149,33 @@ footer {
     color: #333;
 }
 
+
+
+
+.schedule-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between rows */
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: 200px auto; /* Fixed width for the left column, auto for the right */
+    column-gap: 20px; /* Space between columns */
+    align-items: center; /* Align items vertically within the row */
+  }
+  
+  .left {
+    font-size: 1.5em; /* Larger font size */
+    line-height: 1.4;
+    text-align: right; /* Right-align text in the left column */
+    white-space: nowrap; /* Prevent wrapping in the left column */
+  }
+  
+  .right {
+    font-size: 1.5em;
+    line-height: 1.4;
+    text-align: left; /* Align text to the left in the right column */
+  }
+  
+  
