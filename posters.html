@@ -68,7 +68,7 @@
 
     <main>
         <section id="dates" class="section">
-            <h2>Accepted Posters</h2>
+            <h2>Poster Session 1:</h2>
             
             <div class="poster-list">
 
@@ -94,18 +94,6 @@
 
 
 
-<div class="poster">
-    <h3 onclick="toggleAbstract(this)">Incentivizing Quality Text Generation via Statistical Contracts</h3>
-    <p class="authors">Eden Saig, Ohad Einav, Inbal Talgam-Cohen</p>
-    <div class="abstract">While the success of large language models (LLMs) increases demand for machine-generated text, current pay-per-token pricing schemes create a misalignment of incentives known in economics as moral hazard: Text-generating agents have strong incentive to cut costs by preferring a cheaper model over the cutting-edge one, and this can be done “behind the scenes” since the agent performs inference internally. In this work, we approach this issue from an economic perspective, by proposing a pay-for-performance, contract-based framework for incentivizing quality. We study a principal-agent game where the agent generates text using costly inference, and the contract determines the principal’s payment for the text according to an automated quality evaluation. Since standard contract theory is inapplicable when internal inference costs are unknown, we introduce cost-robust contracts. As our main theoretical contribution, we characterize optimal cost-robust contracts through a direct correspondence to optimal composite hypothesis tests from statistics, generalizing a result of Saig et al. (NeurIPS’23). We evaluate our framework empirically by deriving contracts for a range of objectives and LLM evaluation benchmarks, and find that cost-robust contracts sacrifice only a marginal increase in objective value compared to their cost-aware counterparts.</div>
-</div>
-
-
-<div class="poster">
-    <h3 onclick="toggleAbstract(this)">From Independence of Clones to Composition Consistency: A Hierarchy of Barriers to Strategic Nomination</h3>
-    <p class="authors">Ratip Emin Berker, Sílvia Casacuberta, Isaac Robinson, Christopher Ong, Vincent Conitzer, Edith Elkind</p>
-    <div class="abstract">We study two axioms for social choice functions that capture the impact of similar candidates: independence of clones (IoC) and composition consistency (CC). We clarify the relationship between these axioms by observing that CC is strictly more demanding than IoC, and investigate whether common voting rules that are known to be independent of clones (such as STV, Ranked Pairs, Schulze, and Split Cycle) are composition-consistent. While for most of these rules the answer is negative, we identify a variant of Ranked Pairs that satisfies CC. Further, we show how to efficiently modify any (neutral) social choice function so that it satisfies CC, while maintaining its other desirable properties. Our transformation relies on the hierarchical representation of clone structures via PQ-trees. We extend our analysis to social preference functions. Finally, we interpret IoC and CC as measures of robustness against strategic manipulation by candidates, with IoC corresponding to strategyproofness and CC corresponding to obvious strategyproofness.</div>
-</div>
 
 <div class="poster">
     <h3 onclick="toggleAbstract(this)">LLM-Mirror: A Generated-Persona Approach for Survey Pre-Testing</h3>
@@ -119,11 +107,64 @@
     <div class="abstract">The next frontier of online advertising is revenue generation from LLM-generated content. We consider a setting where advertisers aim to influence the responses of an LLM to align with their interests, while platforms seek to maximize advertiser value and ensure user satisfaction. The challenge is that advertisers' preferences generally conflict with those of the user, and advertisers may misreport their preferences. To address this, we introduce MOSAIC, an auction mechanism that ensures that truthful reporting is a dominant strategy for advertisers and that aligns the utility of each advertiser with their contribution to social welfare. Importantly, the mechanism operates without LLM fine-tuning or access to model weights and provably converges to the output of the optimally fine-tuned LLM as computational resources increase. Additionally, it can incorporate contextual information about advertisers,  which significantly improves social welfare. Through experiments with a publicly available LLM, we show that MOSAIC leads to high advertiser value and platform revenue with low computational overhead. While our motivating application is online advertising, our mechanism can be applied in any setting with monetary transfers, making it a general-purpose solution for truthfully aggregating the preferences of self-interested agents over LLM-generated replies.</div>
 </div>
 
+
+
+
+
+
+
+
+<div class="poster">
+    <h3 onclick="toggleAbstract(this)">Prices, Bids, Values: Everything, Everywhere, All at Once</h3>
+    <p class="authors">Ermis Soumalias, Jakob Heiss, Jakob Weissteiner, Sven Seuken</p>
+    <div class="abstract">We study the design of iterative combinatorial auctions (ICAs). The main challenge in this domain is that the bundle space grows exponentially in the number of items. To address this, several papers have recently proposed machine learning (ML)-based preference elicitation algorithms that aim to elicit only the most important information from bidders to maximize efficiency. The SOTA ML-based algorithms elicit bidders' preferences via value queries (i.e., "What is your value for the bundle  {A,B}?"). However, the most popular iterative combinatorial auction in practice elicits information via more practical demand queries (i.e., "At prices $p$, what is your most preferred bundle of items?"). In this paper, we examine the advantages of value and demand queries from both an auction design and an ML perspective. We propose a novel ML algorithm that provably integrates the full information from both query types. As suggested by our theoretical analysis, our experimental results verify that combining demand and value queries results in significantly better learning performance.Building on these insights, we present MLHCA, the most efficient ICA ever designed. MLHCA substantially outperforms the previous SOTA in realistic auction settings, delivering large efficiency gains. Compared to the previous SOTA, MLHCA reduces efficiency loss by up to a factor of 10, and in the most challenging and realistic domain, MLHCA outperforms the previous SOTA using 30\% fewer queries. Thus, MLHCA achieves efficiency improvements that translate to welfare gains of hundreds of millions of USD, while also reducing the cognitive load on the bidders, establishing a new benchmark both for practicability and for economic impact.</div>
+</div>
+
+
+
+             <div class="poster">
+                    <h3 onclick="toggleAbstract(this)">InfoBid: A Simulation Framework for Studying Information Disclosure in Auctions with Large Language Model-based Agents</h3>
+                    <p class="authors">Yue Yin </p>
+                    <div class="abstract">In online advertising systems, publishers often face a trade-off in information disclosure strategies: while disclosing more information can enhance efficiency by enabling optimal allocation of ad impressions, it may lose revenue potential by decreasing uncertainty among competing advertisers. Similar to other challenges in market design, understanding this trade-off is constrained by limited access to real-world data, leading researchers and practitioners to turn to simulation frameworks. The recent emergence of large language models (LLMs) offers a novel approach to simulations, providing human-like reasoning and adaptability without necessarily relying on explicit assumptions about agent behavior modeling. Despite their potential, existing frameworks have yet to integrate LLM-based agents for studying information asymmetry and signaling strategies, particularly in the context of auctions. To address this gap, we introduce InfoBid, a flexible simulation framework that leverages LLM agents to examine the effects of information disclosure strategies in multi-agent auction settings. Using GPT-4o, we implemented simulations of second-price auctions with diverse information schemas. The results reveal key insights into how signaling influences strategic behavior and auction outcomes, which align with both economic and social learning theories. Through InfoBid, we hope to foster the use of LLMs as proxies for human economic and social agents in empirical studies, enhancing our understanding of their capabilities and limitations. This work bridges the gap between theoretical market designs and practical applications, advancing research in market simulations, information design, and agent-based reasoning while offering a valuable tool for exploring the dynamics of digital economies.</div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+
+<section id="dates" class="section">
+            <h2>Poster Session 2:</h2>
+            
+            <div class="poster-list">
+
+
+
+<div class="poster">
+    <h3 onclick="toggleAbstract(this)">Incentivizing Quality Text Generation via Statistical Contracts</h3>
+    <p class="authors">Eden Saig, Ohad Einav, Inbal Talgam-Cohen</p>
+    <div class="abstract">While the success of large language models (LLMs) increases demand for machine-generated text, current pay-per-token pricing schemes create a misalignment of incentives known in economics as moral hazard: Text-generating agents have strong incentive to cut costs by preferring a cheaper model over the cutting-edge one, and this can be done “behind the scenes” since the agent performs inference internally. In this work, we approach this issue from an economic perspective, by proposing a pay-for-performance, contract-based framework for incentivizing quality. We study a principal-agent game where the agent generates text using costly inference, and the contract determines the principal’s payment for the text according to an automated quality evaluation. Since standard contract theory is inapplicable when internal inference costs are unknown, we introduce cost-robust contracts. As our main theoretical contribution, we characterize optimal cost-robust contracts through a direct correspondence to optimal composite hypothesis tests from statistics, generalizing a result of Saig et al. (NeurIPS’23). We evaluate our framework empirically by deriving contracts for a range of objectives and LLM evaluation benchmarks, and find that cost-robust contracts sacrifice only a marginal increase in objective value compared to their cost-aware counterparts.</div>
+</div>
+
+
+<div class="poster">
+    <h3 onclick="toggleAbstract(this)">From Independence of Clones to Composition Consistency: A Hierarchy of Barriers to Strategic Nomination</h3>
+    <p class="authors">Ratip Emin Berker, Sílvia Casacuberta, Isaac Robinson, Christopher Ong, Vincent Conitzer, Edith Elkind</p>
+    <div class="abstract">We study two axioms for social choice functions that capture the impact of similar candidates: independence of clones (IoC) and composition consistency (CC). We clarify the relationship between these axioms by observing that CC is strictly more demanding than IoC, and investigate whether common voting rules that are known to be independent of clones (such as STV, Ranked Pairs, Schulze, and Split Cycle) are composition-consistent. While for most of these rules the answer is negative, we identify a variant of Ranked Pairs that satisfies CC. Further, we show how to efficiently modify any (neutral) social choice function so that it satisfies CC, while maintaining its other desirable properties. Our transformation relies on the hierarchical representation of clone structures via PQ-trees. We extend our analysis to social preference functions. Finally, we interpret IoC and CC as measures of robustness against strategic manipulation by candidates, with IoC corresponding to strategyproofness and CC corresponding to obvious strategyproofness.</div>
+</div>
+
+
 <div class="poster">
     <h3 onclick="toggleAbstract(this)">On the deteriorated long-term social impact of Generative AI</h3>
     <p class="authors">Boaz Taitler, Omer Ben-Porat</p>
     <div class="abstract">ChatGPT has established Generative AI (GenAI) as a significant technological advancement. However, GenAI's intricate relationship with competing platforms and its downstream impact on users remains under-explored. This paper initiates the study of GenAI's long-term social impact resulting from the weakening network effect of human-based platforms like Stack Overflow. First, we study GenAI's revenue-maximization optimization problem. We develop an approximately optimal solution and show that the optimal solution has a non-cyclic structure. Then, we analyze the social impact, showing that GenAI could be socially harmful. Specifically, we present an analog to Braess's paradox in which all users would be better off without GenAI. Finally, we develop necessary and sufficient conditions for a regulator with incomplete information to ensure that GenAI is socially beneficial.</div>
 </div>
+
+
+
+
 
 <div class="poster">
     <h3 onclick="toggleAbstract(this)">Financial Data Analysis with Fine-tuned Large Language Models</h3>
@@ -132,21 +173,12 @@
 </div>
 
 
-
-
-
 <div class="poster">
     <h3 onclick="toggleAbstract(this)">Clone-Robust Pluralistic Alignment</h3>
     <p class="authors">Ariel D. Procaccia, Benjamin Schiffer, Shirley Zhang</p>
     <div class="abstract">A key challenge in training Large Language Models (LLMs) is properly aligning them with human preferences. Reinforcement Learning with Human Feedback (RLHF) uses pairwise comparisons from human annotators to train reward functions and has emerged as a popular alignment method. However, input datasets in RLHF are not necessarily balanced in the types of questions and answers that are included. Therefore, we want RLHF algorithms to perform well even when the set of alternatives is not uniformly distributed. Drawing on insights from social choice theory, we introduce robustness to approximate clones, a desirable property of RLHF algorithms which requires that adding near-duplicate alternatives does not significantly change the learned reward function. We first demonstrate that the standard RLHF algorithm based on regularized maximum likelihood estimation (MLE) fails to satisfy this property. We then propose the weighted MLE, a new RLHF algorithm that modifies the standard regularized MLE by weighting alternatives based on their similarity to other alternatives. This new algorithm guarantees robustness to approximate clones while preserving desirable theoretical properties. Our work highlights the importance of robustness in RLHF algorithms and provides new tools to improve preference aggregation in the presence of diverse and unbalanced datasets.</div>
 </div>
 
-                <div class="poster">
-                    <h3 onclick="toggleAbstract(this)">InfoBid: A Simulation Framework for Studying Information Disclosure in Auctions with Large Language Model-based Agents</h3>
-                    <p class="authors">Yue Yin </p>
-                    <div class="abstract">In online advertising systems, publishers often face a trade-off in information disclosure strategies: while disclosing more information can enhance efficiency by enabling optimal allocation of ad impressions, it may lose revenue potential by decreasing uncertainty among competing advertisers. Similar to other challenges in market design, understanding this trade-off is constrained by limited access to real-world data, leading researchers and practitioners to turn to simulation frameworks. The recent emergence of large language models (LLMs) offers a novel approach to simulations, providing human-like reasoning and adaptability without necessarily relying on explicit assumptions about agent behavior modeling. Despite their potential, existing frameworks have yet to integrate LLM-based agents for studying information asymmetry and signaling strategies, particularly in the context of auctions.
-To address this gap, we introduce InfoBid, a flexible simulation framework that leverages LLM agents to examine the effects of information disclosure strategies in multi-agent auction settings. Using GPT-4o, we implemented simulations of second-price auctions with diverse information schemas. The results reveal key insights into how signaling influences strategic behavior and auction outcomes, which align with both economic and social learning theories. Through InfoBid, we hope to foster the use of LLMs as proxies for human economic and social agents in empirical studies, enhancing our understanding of their capabilities and limitations. This work bridges the gap between theoretical market designs and practical applications, advancing research in market simulations, information design, and agent-based reasoning while offering a valuable tool for exploring the dynamics of digital economies.</div>
-                </div>
 
 <div class="poster">
     <h3 onclick="toggleAbstract(this)">MindMem: Multimodal for Predicting Advertisement Memorability Using LLMs and Deep Learning</h3>
@@ -154,43 +186,15 @@ To address this gap, we introduce InfoBid, a flexible simulation framework that 
     <div class="abstract">In the competitive landscape of advertising, success hinges on effectively navigating and leveraging complex interactions among consumers, advertisers, and advertisement platforms. These multifaceted interactions compel advertisers to optimize strategies for modeling consumer behavior, enhancing brand recall, and tailoring advertisement content. To address these challenges, we present MindMem, a multimodal predictive model for advertisement memorability. By integrating textual, visual, and auditory data, MindMem achieves state-of-the-art performance, with a Spearman’s correlation coefficient of 0.631 on the LAMBDA and 0.731 on the Memento10K dataset, consistently surpassing existing methods. Furthermore, our analysis identified key factors influencing advertisement memorability, such as video pacing, scene complexity, and emotional resonance. Expanding on this, we introduced MindMem-ReAd (MindMem-Driven Re-generated Advertisement), which employs Large Language Model-based simulations to optimize advertisement content and placement, resulting in up to a 74.12\% improvement in advertisement memorability. Our results highlight the transformative potential of Artificial Intelligence in advertising, offering advertisers a robust tool to drive engagement, enhance competitiveness, and maximize impact in a rapidly evolving market.</div>
 </div>
 
-<div class="poster">
-    <h3 onclick="toggleAbstract(this)">Prices, Bids, Values: Everything, Everywhere, All at Once</h3>
-    <p class="authors">Ermis Soumalias, Jakob Heiss, Jakob Weissteiner, Sven Seuken</p>
-    <div class="abstract">We study the design of iterative combinatorial auctions (ICAs). The main challenge in this domain is that the bundle space grows exponentially in the number of items. To address this, several papers have recently proposed machine learning (ML)-based preference elicitation algorithms that aim to elicit only the most important information from bidders to maximize efficiency. The SOTA ML-based algorithms elicit bidders' preferences via value queries (i.e., "What is your value for the bundle  {A,B}?"). However, the most popular iterative combinatorial auction in practice elicits information via more practical demand queries (i.e., "At prices $p$, what is your most preferred bundle of items?"). In this paper, we examine the advantages of value and demand queries from both an auction design and an ML perspective. We propose a novel ML algorithm that provably integrates the full information from both query types. As suggested by our theoretical analysis, our experimental results verify that combining demand and value queries results in significantly better learning performance.Building on these insights, we present MLHCA, the most efficient ICA ever designed. MLHCA substantially outperforms the previous SOTA in realistic auction settings, delivering large efficiency gains. Compared to the previous SOTA, MLHCA reduces efficiency loss by up to a factor of 10, and in the most challenging and realistic domain, MLHCA outperforms the previous SOTA using 30\% fewer queries. Thus, MLHCA achieves efficiency improvements that translate to welfare gains of hundreds of millions of USD, while also reducing the cognitive load on the bidders, establishing a new benchmark both for practicability and for economic impact.</div>
-</div>
 
-<div class="poster">
+    <div class="poster">
     <h3 onclick="toggleAbstract(this)">Quantitative Financial Models with Scenarios from LLM: Temporal Fusion Transformers as Alternative Monte-Carlo</h3>
     <p class="authors">Irene Aldridge, Daham Kim</p>
     <div class="abstract">This paper presents a novel framework for simulating financial time series data by integrating the Temporal Fusion Transformer (TFT) model. Our model incorporates scenarios derived from Large Language Models (LLMs) to improve the adaptability and accuracy of financial simulations. By utilizing TFT model, our model excels in handling complex and dynamic financial data, offering enhanced explanatory power by leveraging a wide range of time-varying inputs. In addition, by incorporating LLM-generated scenarios, the framework captures both quantitative data and qualitative insights, providing a more comprehensive tool for financial analysis. To prove the superior performance of our model, we simulated the stock return of representative stocks. We evaluated the simulation performance using various time series distance metrics and financial risk management metrics. This hybrid intelligence system significantly improves over traditional Monte Carlo simulations by producing higher-fidelity data, enabling more informed decision-making in risk management.</div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-        </section>
-
-
+<!-- HERE-->
+</section>
 
     </main>
 
